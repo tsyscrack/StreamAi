@@ -176,7 +176,7 @@ class MinionLab:
             try:
                 print("1. Use Exiting Edge Ids")
                 print("2. Create New Edge Ids")
-                connection_choice = int(input("Choose [1/2] -> ").strip())
+                connection_choice = 2
                 if connection_choice in [1, 2]:
                     break
                 else:
@@ -189,7 +189,7 @@ class MinionLab:
                 print("1. Run With Monosans Proxy")
                 print("2. Run With Private Proxy")
                 print("3. Run Without Proxy")
-                proxy_choice = int(input("Choose [1/2/3] -> ").strip())
+                proxy_choice = 2
 
                 if proxy_choice in [1, 2, 3]:
                     proxy_type = (
@@ -208,7 +208,7 @@ class MinionLab:
         if proxy_choice in [1, 2]:
             while True:
                 try:
-                    nodes_count = int(input("How Many Edge Ids Do You Want to Run For Each Account? -> ").strip())
+                    nodes_count = 1000
                     if nodes_count > 0:
                         break
                     else:
